@@ -9,10 +9,6 @@ A Python script that fetches the latest tech news headlines from TechNewsWorld a
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -24,10 +20,15 @@ The Tech News Notifier is a simple script that periodically fetches the latest h
 - Displays desktop notifications with the headline and a link to the full article.
 - Configurable notification interval.
 
+
 ## Requirements
 
 - Python 3.x
 - An internet connection to fetch the latest headlines.
+- Required Python Libraries:
+  - `requests`
+  - `beautifulsoup4`
+  - `win10toast`
 
 ## Installation
 
@@ -35,3 +36,14 @@ The Tech News Notifier is a simple script that periodically fetches the latest h
    ```bash
    https://github.com/Tharaniguru/desktop-notifier.git
    run the main.py file
+2.**Install the required Python packages**:
+```bash
+pip install -r requirements.txt
+```
+## Usage
+**Script Functionality**:
+
+The script will fetch the latest headlines from TechNewsWorld and display a desktop notification every 30 minutes by default.
+Clicking the notification will open the full article in your default web browser.
+
+
